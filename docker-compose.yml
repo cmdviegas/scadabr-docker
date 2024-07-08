@@ -1,0 +1,26 @@
+# ██████╗  ██████╗ █████╗
+# ██╔══██╗██╔════╝██╔══██╗
+# ██║  ██║██║     ███████║
+# ██║  ██║██║     ██╔══██║
+# ██████╔╝╚██████╗██║  ██║
+# ╚═════╝  ╚═════╝╚═╝  ╚═╝
+# DEPARTAMENTO DE ENGENHARIA DE COMPUTACAO E AUTOMACAO
+# UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE, NATAL/RN
+#
+# (C) 2024 CARLOS M D VIEGAS
+# https://github.com/cmdviegas
+
+### Description:
+
+### How it works:
+
+services:
+  scadabr:
+    container_name: ScadaBR
+    hostname: scadabr
+    image: scadabr:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080/tcp" # TOMCAT HTTP SERVER
