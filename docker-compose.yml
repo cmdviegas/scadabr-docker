@@ -16,7 +16,7 @@
 
 services:
   scadabr:
-    container_name: ScadaBR
+    container_name: scadabr
     hostname: scadabr
     image: scadabr:v1
     build:
