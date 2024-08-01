@@ -1,5 +1,5 @@
 # scadabr-docker
-This script installs ScadaBR v1.2 with all the required components (Apache Tomcat 9, JDK 8, Python 3.10, and pyModbusTCP 0.2.1). When the container is created, it starts the Tomcat server with ScadaBR.war and also initiates a ModbusTCP server listening on port 502/tcp.
+This script installs ScadaBR v1.2 with all the required components (Apache Tomcat 9, JDK 8, Python 3.10, and pyModbusTCP 0.2.2). When the container is created, it starts the Tomcat server with ScadaBR.war and also initiates a ModbusTCP server listening on port 502/tcp.
 
 To build and run:
 ```
