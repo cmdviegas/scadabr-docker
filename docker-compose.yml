@@ -12,8 +12,6 @@
 
 ### Description:
 
-### How it works:
-
 services:
   scadabr:
     container_name: scadabr
@@ -24,3 +22,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080/tcp" # TOMCAT HTTP SERVER
+      - "502:502/tcp" # MODBUS TCP SERVER
