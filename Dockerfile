@@ -61,7 +61,7 @@ RUN ln -sf apache-tomcat-* tomcat
 RUN wget -q -nc --no-check-certificate https://github.com/ScadaBR/ScadaBR/releases/download/v1.2/ScadaBR.war -P ${MYDIR}/tomcat/webapps/
 
 # Install pyModbusTCP
-RUN pip install pyModbusTCP
+RUN pip install pyModbusTCP==0.2.2
 
 # Cleaning
 RUN rm -rf /tmp/* /var/tmp/*
