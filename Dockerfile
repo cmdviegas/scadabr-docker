@@ -66,5 +66,9 @@ RUN pip install pyModbusTCP
 # Cleaning
 RUN rm -rf /tmp/* /var/tmp/*
 
+# Setting permission
+RUN chmod 0700 start-services.sh
+
 # Command to run at container start
-CMD ["tomcat/bin/catalina.sh", "run"]
+ENTRYPOINT ${MYDIR}/start-services.sh
+#CMD ["tomcat/bin/catalina.sh", "run"]
